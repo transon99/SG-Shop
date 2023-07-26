@@ -1,4 +1,4 @@
 package com.spring_boot.SGShop.Modal;
 
-public class Users {
+public class Brand {
 }
