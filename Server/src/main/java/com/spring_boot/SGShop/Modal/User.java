@@ -1,5 +1,8 @@
 package com.spring_boot.SGShop.Modal;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,8 +28,21 @@ public class User {
     @OneToOne
     @JoinColumn(name = "address_id",referencedColumnName = "id")
     private Address address;
-//    @ManyToMany
-//    private Role role;
+
+    private Role role;
+
+    @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Comment> comment;
+
+    @ManyToMany(cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(name = "user_favorite",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "favorite_id")
+    )
+
+    private List<Favorites> favorites;
 }

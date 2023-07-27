@@ -1,14 +1,17 @@
 package com.spring_boot.SGShop.Service.ServiceImpl;
 
 import com.spring_boot.SGShop.Modal.Address;
+import com.spring_boot.SGShop.Modal.Favorites;
 import com.spring_boot.SGShop.Modal.User;
 import com.spring_boot.SGShop.Repository.AddressRepository;
+import com.spring_boot.SGShop.Repository.FavoritesRepository;
 import com.spring_boot.SGShop.Repository.UserRepository;
 import com.spring_boot.SGShop.Service.UserService;
 import com.spring_boot.SGShop.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,6 +22,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     AddressRepository addressRepository;
+
+    @Autowired
+    FavoritesRepository favoritesRepository;
     @Override
     public List<User> getAllUser() {
         List<User> userList= userRepository.findAll();
@@ -39,6 +45,13 @@ public class UserServiceImpl implements UserService {
     public User insertUser(User user) {
         Address address = addressRepository.findById(user.getAddress().getId()).get();
         user.setAddress(address);
+        List<Favorites> listFavorites= new ArrayList<>();
+        for (Favorites favorite : user.getFavorites()
+             ) {
+            Favorites foundFavorites = favoritesRepository.findById(favorite.getId()).get();
+            listFavorites.add(foundFavorites);
+        }
+        user.setFavorites(listFavorites);
         userRepository.save(user);
         return user;
     }
