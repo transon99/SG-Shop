@@ -19,8 +19,9 @@ public class CommentServiceImpl implements CommentService {
 
     @Autowired
     UserRepository userRepository;
+
     @Override
-    public List<Comment> getAllCommentOfAStudent() {
+    public List<Comment> getAllCommentOfUser() {
         List<Comment> listComment = commentRepository.findAll();
         if(listComment.isEmpty())
             throw new NotFoundException("Can't found any comment");
@@ -32,7 +33,8 @@ public class CommentServiceImpl implements CommentService {
     public Comment insertComment(Comment comment) {
         User userFound = userRepository.findById(comment.getUser().getId()).get();
         comment.setUser(userFound);
-        return commentRepository.save(comment);
+        commentRepository.save(comment);
+        return comment;
     }
 
     @Override
