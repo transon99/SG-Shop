@@ -1,6 +1,6 @@
 package com.spring_boot.SGShop.Service;
 
-import com.spring_boot.SGShop.Modal.User;
+import com.spring_boot.SGShop.modal.User;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,5 +13,5 @@ public interface UserService {
     String deleteUser(Long id);
     Optional<User> updateUser(Long id, User user);
 
-    List<User> getUserByLastName(String lastName);
+//    List<User> getUserByLastName(String lastName);
 }

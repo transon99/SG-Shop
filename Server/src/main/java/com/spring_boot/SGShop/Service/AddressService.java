@@ -1,8 +1,6 @@
 package com.spring_boot.SGShop.Service;
 
-import com.spring_boot.SGShop.Modal.Address;
-import com.spring_boot.SGShop.Modal.User;
-import com.spring_boot.SGShop.Repository.AddressRepository;
+import com.spring_boot.SGShop.modal.Address;
 
 import java.util.List;
 import java.util.Optional;

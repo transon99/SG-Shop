@@ -1,6 +1,5 @@
-package com.spring_boot.SGShop.Modal;
+package com.spring_boot.SGShop.modal;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,15 +9,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Address {
+@Table(name = "product")
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String houseNumber;
-    private String street;
 
-    @JsonIgnore
-    @OneToOne(mappedBy = "address")
-    private User user;
+
 }

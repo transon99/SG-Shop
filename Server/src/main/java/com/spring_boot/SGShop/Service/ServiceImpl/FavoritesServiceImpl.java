@@ -1,9 +1,9 @@
 package com.spring_boot.SGShop.Service.ServiceImpl;
 
-import com.spring_boot.SGShop.Modal.Favorites;
-import com.spring_boot.SGShop.Modal.User;
-import com.spring_boot.SGShop.Repository.FavoritesRepository;
-import com.spring_boot.SGShop.Repository.UserRepository;
+import com.spring_boot.SGShop.modal.Favorites;
+import com.spring_boot.SGShop.modal.User;
+import com.spring_boot.SGShop.repository.FavoritesRepository;
+import com.spring_boot.SGShop.repository.UserRepository;
 import com.spring_boot.SGShop.Service.FavoritesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

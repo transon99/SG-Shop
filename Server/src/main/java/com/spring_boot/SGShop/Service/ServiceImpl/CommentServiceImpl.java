@@ -1,9 +1,9 @@
 package com.spring_boot.SGShop.Service.ServiceImpl;
 
-import com.spring_boot.SGShop.Modal.Comment;
-import com.spring_boot.SGShop.Modal.User;
-import com.spring_boot.SGShop.Repository.CommentRepository;
-import com.spring_boot.SGShop.Repository.UserRepository;
+import com.spring_boot.SGShop.modal.Comment;
+import com.spring_boot.SGShop.modal.User;
+import com.spring_boot.SGShop.repository.CommentRepository;
+import com.spring_boot.SGShop.repository.UserRepository;
 import com.spring_boot.SGShop.Service.CommentService;
 import com.spring_boot.SGShop.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

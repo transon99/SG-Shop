@@ -1,6 +1,6 @@
 package com.spring_boot.SGShop.Service;
 
-import com.spring_boot.SGShop.Modal.Comment;
+import com.spring_boot.SGShop.modal.Comment;
 
 import java.util.List;
 import java.util.Optional;

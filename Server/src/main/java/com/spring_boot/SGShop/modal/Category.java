@@ -1,4 +1,4 @@
-package com.spring_boot.SGShop.Modal;
+package com.spring_boot.SGShop.modal;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

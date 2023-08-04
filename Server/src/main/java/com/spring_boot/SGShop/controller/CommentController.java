@@ -1,6 +1,6 @@
 package com.spring_boot.SGShop.controller;
 
-import com.spring_boot.SGShop.Modal.Comment;
+import com.spring_boot.SGShop.modal.Comment;
 import com.spring_boot.SGShop.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

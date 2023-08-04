@@ -1,11 +1,10 @@
 package com.spring_boot.SGShop.Service.ServiceImpl;
 
-import com.spring_boot.SGShop.Modal.Address;
-import com.spring_boot.SGShop.Modal.Favorites;
-import com.spring_boot.SGShop.Modal.User;
-import com.spring_boot.SGShop.Repository.AddressRepository;
-import com.spring_boot.SGShop.Repository.FavoritesRepository;
-import com.spring_boot.SGShop.Repository.UserRepository;
+import com.spring_boot.SGShop.modal.Address;
+import com.spring_boot.SGShop.modal.User;
+import com.spring_boot.SGShop.repository.AddressRepository;
+import com.spring_boot.SGShop.repository.FavoritesRepository;
+import com.spring_boot.SGShop.repository.UserRepository;
 import com.spring_boot.SGShop.Service.UserService;
 import com.spring_boot.SGShop.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -77,8 +76,8 @@ public class UserServiceImpl implements UserService {
         return userUpdate;
     }
 
-    @Override
-    public List<User> getUserByLastName(String lastName) {
-        return userRepository.findUserByLastName(lastName);
-    }
+//    @Override
+//    public List<User> getUserByLastName(String lastName) {
+//        return userRepository.findUserByLastName(lastName);
+//    }
 }

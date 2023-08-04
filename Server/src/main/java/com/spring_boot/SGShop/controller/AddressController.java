@@ -1,9 +1,7 @@
 package com.spring_boot.SGShop.controller;
 
-import com.spring_boot.SGShop.Modal.Address;
-import com.spring_boot.SGShop.Modal.Comment;
+import com.spring_boot.SGShop.modal.Address;
 import com.spring_boot.SGShop.Service.AddressService;
-import com.spring_boot.SGShop.Service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
