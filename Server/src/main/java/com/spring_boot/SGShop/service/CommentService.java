@@ -1,4 +1,4 @@
-package com.spring_boot.SGShop.Service;
+package com.spring_boot.SGShop.service;
 
 import com.spring_boot.SGShop.modal.Comment;
 

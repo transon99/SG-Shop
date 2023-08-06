@@ -1,7 +1,7 @@
 package com.spring_boot.SGShop.controller;
 
 import com.spring_boot.SGShop.modal.User;
-import com.spring_boot.SGShop.Service.UserService;
+import com.spring_boot.SGShop.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

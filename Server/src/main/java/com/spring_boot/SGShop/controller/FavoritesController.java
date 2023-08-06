@@ -1,7 +1,7 @@
 package com.spring_boot.SGShop.controller;
 
 import com.spring_boot.SGShop.modal.Favorites;
-import com.spring_boot.SGShop.Service.FavoritesService;
+import com.spring_boot.SGShop.service.FavoritesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

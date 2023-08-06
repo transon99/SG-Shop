@@ -1,11 +1,11 @@
-package com.spring_boot.SGShop.Service.ServiceImpl;
+package com.spring_boot.SGShop.service.ServiceImpl;
 
 import com.spring_boot.SGShop.modal.Address;
 import com.spring_boot.SGShop.modal.User;
 import com.spring_boot.SGShop.repository.AddressRepository;
 import com.spring_boot.SGShop.repository.FavoritesRepository;
 import com.spring_boot.SGShop.repository.UserRepository;
-import com.spring_boot.SGShop.Service.UserService;
+import com.spring_boot.SGShop.service.UserService;
 import com.spring_boot.SGShop.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
