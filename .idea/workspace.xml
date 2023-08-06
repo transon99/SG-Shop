@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d004d10-49c4-4497-8a10-277c211cb122" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/exception/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Modal/responseObj/ResponseObj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Service/ServiceImpl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/Service/ServiceImpl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/com/spring_boot/SGShop/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="1d004d10-49c4-4497-8a10-277c211cb122" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,16 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WorkSpace/SG-Shop&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/WorkSpace/SG-Shop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +54,7 @@
       <updated>1687496180886</updated>
       <workItem from="1690339222065" duration="178000" />
       <workItem from="1690343969053" duration="100000" />
+      <workItem from="1691338813954" duration="743000" />
     </task>
     <servers />
   </component>
