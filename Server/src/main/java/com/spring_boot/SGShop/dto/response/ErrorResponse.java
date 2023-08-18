@@ -1,4 +1,4 @@
-package com.spring_boot.SGShop.exception;
+package com.spring_boot.SGShop.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

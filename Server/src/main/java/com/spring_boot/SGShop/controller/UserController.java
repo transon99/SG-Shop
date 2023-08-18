@@ -24,10 +24,10 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @GetMapping("/find/{lastName}")
-    public List<User> getUserByLastName(@PathVariable String lastName){
-        return userService.getUserByLastName(lastName);
-    }
+//    @GetMapping("/find/{lastName}")
+//    public List<User> getUserByLastName(@PathVariable String lastName){
+//        return userService.getUserByLastName(lastName);
+//    }
     @PostMapping
     public User insertUser(@RequestBody User user){
         return userService.insertUser(user);

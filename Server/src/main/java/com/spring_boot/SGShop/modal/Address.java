@@ -10,13 +10,26 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "address")
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
+    private String province;
+
+    @Column(nullable = false)
+    private String ward;
+
+    @Column(nullable = false)
     private String houseNumber;
+
+    @Column()
     private String street;
+    @Column(nullable = false)
+    private String street;
+
 
     @JsonIgnore
     @OneToOne(mappedBy = "address")
