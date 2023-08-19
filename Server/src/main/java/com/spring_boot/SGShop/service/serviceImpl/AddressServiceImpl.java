@@ -1,9 +1,11 @@
-package com.spring_boot.SGShop.Service.ServiceImpl;
+package com.spring_boot.SGShop.service.serviceImpl;
 
+import com.spring_boot.SGShop.dto.response.AddressResponse;
 import com.spring_boot.SGShop.modal.Address;
 import com.spring_boot.SGShop.repository.AddressRepository;
 import com.spring_boot.SGShop.service.AddressService;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,30 +16,31 @@ import java.util.Optional;
 public class AddressServiceImpl implements AddressService {
     private final AddressRepository addressRepository;
 
+
     @Override
-    public List<Address> getAllAddress() {
+    public List<AddressResponse> getAllAddress() {
 
         return null;
     }
 
     @Override
-    public Optional<Address> getAddressById(Long id) {
-        return Optional.empty();
+    public AddressResponse getAddressById(Long id) {
+        return null;
     }
 
     @Override
-    public Address inserAddress(Address address) {
+    public AddressResponse createAddress(Address address) {
         addressRepository.save(address);
-        return address;
-    }
-
-    @Override
-    public String deleteUser(Long id) {
         return null;
     }
 
     @Override
-    public Optional<Address> updateUser(Long id, Address address) {
-        return Optional.empty();
+    public String deleteAddress(Long id) {
+        return null;
+    }
+
+    @Override
+    public AddressResponse updateAddress(Long id, Address address) {
+        return null;
     }
 }

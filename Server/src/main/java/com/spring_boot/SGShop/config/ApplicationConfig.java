@@ -3,6 +3,7 @@ package com.spring_boot.SGShop.config;
 import com.spring_boot.SGShop.repository.UserRepository;
 import com.spring_boot.SGShop.security.UserDetailService;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,11 +20,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @RequiredArgsConstructor
 public class ApplicationConfig {
     private final UserDetailService userDetailsService;
-//    @Bean
-//    public UserDetailsService userDetailsService() {
-//        return email -> (UserDetails) userRepository.findByEmail(email)
-//                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-//    }
 
     @Bean
     public AuthenticationProvider authenticationProvider() {

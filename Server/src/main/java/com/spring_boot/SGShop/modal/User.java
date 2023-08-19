@@ -40,8 +40,7 @@ public class User {
     private List<Comment> comment;
 
     @ManyToMany(cascade = {
-            CascadeType.PERSIST,
-            CascadeType.MERGE
+            CascadeType.ALL
     })
     @JoinTable(name = "user_favorite",
             joinColumns = @JoinColumn(name = "user_id"),

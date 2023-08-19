@@ -27,9 +27,6 @@ public class Address {
 
     @Column()
     private String street;
-    @Column(nullable = false)
-    private String street;
-
 
     @JsonIgnore
     @OneToOne(mappedBy = "address")
